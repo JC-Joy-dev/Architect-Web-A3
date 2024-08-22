@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Architect Site</title>
+    <link rel="shortcut icon" href="assets/fav-2.png" type="image/x-icon">
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font-Awesome-CDN -->
+    <script src="https://kit.fontawesome.com/371462852f.js" crossorigin="anonymous"></script>
     <!-- Tailwind & DaisyUI-CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'arrow-bg': '#ABEF5F',
+                        'arrow-bg2': '#000000',
+                        'btn-text': '#212121',
+                        'gradient': '#FFFFFF',
+                        'gradient-1': '#ffffff00',
+                        'line': '#E9E9E9',
+                        'icon-color': '#737373',
+                    }
+                }
             }
-          }
         }
-      </script>
-    
+    </script>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        padding: 0;
+    }
+</style>
 </head>
+
 <body>
-     <h3 class="container mx-auto text-[red] text-center">hello World</h3>
+    <header class="bg-gradient-to-r from-gradient-1 to-gradient px-5 xl:px-0 2xl:px-0 lg:px-16 md:px-8 sm:px-8">
+        <nav class="container mx-auto">
+            <div class="navbar justify-between lg:justify-normal md:justify-normal sm:justify-normal">
+                <div class="navbar-start">
+                    <div>
+                        <a class="text-xl">
+                            <i class="fa-solid fa-arrow-right bg-arrow-bg -rotate-45 rounded-full w-10 h-10 inline-flex justify-center items-center"></i>
+                            <span class="text-2xl font-bold text-btn-text">Interior</span>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-bold">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-4 lg:inline-flex md:inline-flex hidden">
+                    <i class="fa-solid fa-magnifying-glass bg-white rounded-full w-12 h-12 border border-line inline-flex justify-center items-center text-icon-color"></i>
+                    <i class="fa-solid fa-cart-shopping bg-white rounded-full w-12 h-12 border border-line inline-flex justify-center items-center text-icon-color"></i>
+                    <a href="#" class="bg-arrow-bg w-52 py-5 inline-flex justify-center rounded-full">
+                        <span class="text-xl font-bold">Book Consult</span>
+                        <span>
+                            <i class="fa-solid fa-arrow-right bg-arrow-bg2 -rotate-45 rounded-full w-7 h-7 inline-flex justify-center items-center text-white ml-1"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn-ghost lg:hidden justify-self-end pl-4">
+                        <i class="fa-solid fa-bars w-12 h-12 bg-white border border-line rounded-full inline-flex items-center justify-center text-icon-color text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
