@@ -31,8 +31,11 @@
                         // banner
                         'heading-color': '#212121',
                         'pera-color': '#494949',
-                        // 'banner-btn': '#ABEF5F80',
                         'banner-btn': '#aef55e99',
+                        // design
+                        'design-main': '#f4f4f4',
+                        'design-p': '#737373',
+
                     }
                 }
             }
@@ -57,7 +60,7 @@
 </head>
 
 <body>
-    <header class="bg-gradient-to-r from-gradient-1 to-gradient px-5 xl:px-0 2xl:px-0 lg:px-16 md:px-8 sm:px-8">
+    <header class="bg-gradient-to-r from-gradient-1 to-gradient px-5 lg:px-32 md:px-8 sm:px-8">
         <!-- ******~Navigation-Section~****** -->
         <nav class="container mx-auto pt-8 lg:pt-12 md:10 sm:10">
             <div class="navbar justify-between lg:justify-normal md:justify-normal sm:justify-normal">
@@ -136,6 +139,108 @@
         </section>
 
     </header>
+    <main>
+        <!-- ******~Design-Section~****** -->
+        <section class="bg-design-main px-5 lg:px-32 md:px-8 sm:px-8 lg:py-24 md:py-16 py-8">
+            <div class="container flex mx-auto flex-col md:flex-col lg:flex-row gap-6">
+                <!-- Text -->
+                <div class="flex-1 relative">
+                    <div class="absolute -top-16 -left-14 hidden lg:block">
+                        <img src="assets/Vector.png" alt="">
+                    </div>
+                    <div class="flex justify-center lg:justify-start">
+                        <a href=""
+                            class="bg-white rounded-full py-2 w-28 text-base font-bold text-pera-color flex justify-center gap-2">
+                            <i class="fa-solid fa-arrow-right self-center"></i>
+                            <span>About Us</span>
+                        </a>
+                    </div>
+                    <h2 class="text-heading-color text-4xl font-bold text-center lg:text-left my-6">We design
+                        thoughtful, liveable spaces</h2>
+                    <p class="text-pera-color font-medium text-base text-center lg:text-left mb-6">The barn house
+                        captivates with its blend of rustic
+                        charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                    <div class="flex md:flex-row lg:flex-col flex-col gap-5">
+                        <!-- Commercial -->
+                        <div class="flex p-5 gap-6 bg-white rounded-xl">
+                            <div class="py-3">
+                                <img src="assets/commercial.png" alt="">
+                            </div>
+                            <div class="self-center">
+                                <h4 class="text-pera-color font-extrabold text-xl">Commercial</h4>
+                                <p class="text-design-p font-medium text-base">The barn house captivates with its blend
+                                    of
+                                    rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <!-- Residential -->
+                        <div class="flex p-5 gap-6 bg-white rounded-xl">
+                            <div class="py-3">
+                                <img src="assets/residential.png" alt="">
+                            </div>
+                            <div class="self-center">
+                                <h4 class="text-pera-color font-extrabold text-xl">Residential</h4>
+                                <p class="text-design-p font-medium text-base">The barn house captivates with its blend
+                                    of
+                                    rustic charm and modern.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image -->
+                <!-- <div class="flex-1">
+                    <img src="assets/Rectangle.png" alt="" class="w-full h-full xl:h-full lg:max-h-[556px] md:max-h-[340px] md:object-cover rounded-2xl">
+                </div> -->
+            </div>
+        </section>
+        <!-- ******~Counter-Section~****** -->
+         <section class="bg-design-main px-5 lg:px-32 md:px-8 sm:px-8">
+            <div class="container mx-auto bg-white p-7 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6 rounded-2xl">
+                <!-- Item-01 -->
+                <div class="text-center">
+                    <div>
+                        <i class="fa-solid fa-envelope text-design-p text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-extrabold text-pera-color mb-2">235+</h3>
+                        <p class="text-base font-medium text-design-p">Happy Client Review</p>
+                    </div>
+                </div>
+                <!-- Item-02 -->
+                <div class="text-center">
+                    <div >
+                        <i class="fa-solid fa-envelope text-design-p text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-extrabold text-pera-color mb-2">50+</h3>
+                        <p class="text-base font-medium text-design-p">Work Department</p>
+                    </div>
+                </div>
+                <!-- Item-03 -->
+                <div class="text-center">
+                    <div >
+                        <i class="fa-solid fa-user-group text-design-p text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-extrabold text-pera-color mb-2">307k+</h3>
+                        <p class="text-base font-medium text-design-p">Our Happy Client</p>
+                    </div>
+                </div>
+                <!-- Item-04 -->
+                <div class="text-center">
+                    <div>
+                        <i class="fa-regular fa-user text-design-p text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-extrabold text-pera-color mb-2">307+</h3>
+                        <p class="text-base font-medium text-design-p">Staff Members</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
 </body>
 
 </html>
